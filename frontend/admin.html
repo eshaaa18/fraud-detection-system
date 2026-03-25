@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<h2>Fraud Overview</h2>
+<canvas id="fraudChart" width="400" height="200"></canvas>
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<div class="buttons">
+  <button onclick="loadTransactions()">Transactions</button>
+  <button onclick="loadAlerts()">Alerts</button>
+  <button onclick="loadStats()">Stats</button>
+  <button onclick="loadPerformance()">Performance</button>
+</div>
+
+<h2>Transactions</h2>
+<table id="transactionsTable"></table>
+
+<h2>Alerts</h2>
+<table id="alertsTable"></table>
+
+<h2>Stats</h2>
+<pre id="stats"></pre>
+
+<h2>Performance</h2>
+<pre id="performance"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>

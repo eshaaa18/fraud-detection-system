@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fraud System - User</title>
+  <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1> Fraud Detection System </h1>
+
+<div class="card">
+  <h2>Login</h2>
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div class="card">
+  <h2>Send Transaction</h2>
+  <input id="user_id" placeholder="User ID">
+  <input id="amount" placeholder="Amount">
+  <input id="location" placeholder="Location">
+  <input id="device" placeholder="Device (new/old)">
+  <button onclick="sendTransaction()">Send</button>
+</div>
+
+<h3>Result</h3>
+<pre id="result"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
